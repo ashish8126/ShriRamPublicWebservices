@@ -11,7 +11,7 @@
     $phone = $_POST['phone'];
     $password = $_POST['password'];
 
-    //Commit
+    //Commit Changes
    
     $name = "Ashish";
     $email = "ashihsh@gmail.com";
