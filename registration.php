@@ -12,7 +12,7 @@
     $password = $_POST['password'];
 
     //Commit Changes Ashish
-    
+    ///
     
     
     $sql = "insert into register_user (name, phone, email,password) values ('$name', $phone, '$email','$password')";
