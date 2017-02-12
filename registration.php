@@ -12,15 +12,19 @@
     $password = $_POST['password'];
 
     //Commit Changes Ashish
-   
-    $name = "Ashish";
-    $email = "ashihsh@gmail.com";
-    $phone = 787878787;
-    $password = "sdfds";
+    
+    
     
     $sql = "insert into register_user (name, phone, email,password) values ('$name', $phone, '$email','$password')";
     
     $result = mysqli_query($conn,$sql);
-    echo 'Success';
+    
+    
+    $output["Result"] = "success"; 
+    
+    
+    print_r(json_encode($output));
+    
+    mysqli_close($conn);
     
 ?>
